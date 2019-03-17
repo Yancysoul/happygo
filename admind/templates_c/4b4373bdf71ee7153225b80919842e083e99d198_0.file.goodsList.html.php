@@ -1,0 +1,102 @@
+<?php
+/* Smarty version 3.1.30, created on 2018-12-21 19:25:59
+  from "E:\WWW\happygo\admin\templates\goodsList.html" */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.30',
+  'unifunc' => 'content_5c1ccdc7187082_55297828',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '4b4373bdf71ee7153225b80919842e083e99d198' => 
+    array (
+      0 => 'E:\\WWW\\happygo\\admin\\templates\\goodsList.html',
+      1 => 1545390969,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_5c1ccdc7187082_55297828 (Smarty_Internal_Template $_smarty_tpl) {
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/goodsList.css">
+</head>
+
+<body>
+
+    <table style="width:1200px;margin:0 auto;" class="table table-striped table-bordered">
+        <caption>商品列表:<a href="goodsList.php">全部类别</a><a href="goodsList.php?goodssort=1">个护美妆</a><a href="goodsList.php?goodssort=2">食品健康</a><a href="goodsList.php?goodssort=3">餐厨日用</a><a href="goodsList.php?goodssort=4">服装配饰</a><a href="goodsList.php?goodssort=5">布艺家纺</a><a href="goodsList.php?goodssort=6">家电数码</a><a href="goodsList.php?goodssort=7"><a>严选</a><a class="add" href="addGoods.html">添加商品</a></caption>
+        <thead>
+            <tr>
+                <th>商品名称</th>
+                <th>商品描述</th>
+                <th>商品当前价格</th>
+                <th>商品历史价格</th>
+                <th>商品类别</th>
+                <th>商品状态</th>
+                <th>商品状态描述</th>
+                <th>商品图片</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['goods']->value, 'val', false, 'x');
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['x']->value => $_smarty_tpl->tpl_vars['val']->value) {
+?>
+            <tr>
+                <td><?php echo $_smarty_tpl->tpl_vars['val']->value["goodsname"];?>
+</td>
+                <td><?php echo $_smarty_tpl->tpl_vars['val']->value["goodsdesc"];?>
+</td>
+                <td><?php echo $_smarty_tpl->tpl_vars['val']->value["goodsnewsprice"];?>
+元</td>
+                <td><?php echo $_smarty_tpl->tpl_vars['val']->value["goodsoldprice"];?>
+元</td>
+                <td><?php echo $_smarty_tpl->tpl_vars['val']->value["goodssort"];?>
+</td>
+                <td><?php echo $_smarty_tpl->tpl_vars['val']->value["goodsactive"];?>
+</td>
+                <td><?php echo $_smarty_tpl->tpl_vars['val']->value["goodsactivedesc"];?>
+</td>
+                <td><img style="height:30px" src="../images/<?php echo $_smarty_tpl->tpl_vars['val']->value['goodspic'];?>
+" alt=""></td>
+                <td><a href="updateGoods.php?id=<?php echo $_smarty_tpl->tpl_vars['val']->value['id'];?>
+">更新</a>/<a href="delGoods.php?id=<?php echo $_smarty_tpl->tpl_vars['val']->value['id'];?>
+">删除</a></td>
+            </tr>
+            <?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
+?>
+
+        </tbody>
+    </table>
+    <div class="desc" style="width:1200px;margin:0 auto;padding-top: 20px">
+        商品类别说明：1表示个护美妆，2表示食品健康，3表示餐厨日用，4表示服装配饰，5表示布艺家纺，6表示家电数码，7表示严选<br><br>
+        商品状态说明：0表示无，1表示限时抢购，2表示新品推荐，3表示精选活动
+    </div>
+    <?php echo '<script'; ?>
+ src="../../js/jquery-1.8.3.min.js"><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+ src="js/bootstrap.min.js"><?php echo '</script'; ?>
+>
+</body>
+
+</html><?php }
+}

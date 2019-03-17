@@ -1,0 +1,255 @@
+.help_div {
+    padding-top: 20px;
+    width: 1200px;
+    margin: 0 auto;
+}
+.help_div_left {
+    width: 272px;
+    float: left;
+}
+.help_div_left_bzdh {
+    border: 1px #f4f4f4 solid;
+    width: 270px;
+}
+.help_list {
+    background-color: #f8f8f8;
+    border-bottom: 1px #e7e4e4 solid;
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+.help_list a {
+    display:block;
+    height: 34px;
+    color: #707070;
+}
+.help_list_hover {
+    background-color: #c5010f;
+}
+.help_list_hover a {
+    color: #fff;
+}
+.help_list_link {
+    background-color: #c5010f;
+}
+.help_list_link a {
+    color: #fff;
+}
+.hide-items {
+    background-color: #d8d2d0;
+    border-bottom: 1px #e7e4e4 solid;
+    height: 28px;
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 20px;
+    padding-top: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+.hide-items a {
+    color: #707070;
+}
+.hide-items-hover a {
+    color: red;
+}
+.hide-items-link a {
+    color: red;
+}
+.help_div_left_lxfs {
+    margin-top: 15px;
+}
+.help_div_right {
+    width: 889px;
+    float: right;
+}
+.help_div_right_ss {
+    background-color: #f8f8f8;
+    width: 859px;
+    padding: 15px;
+}
+.mjy_seach {
+    width: 508px;
+    float: left;
+}
+.mjy_seach input {
+    width: 496px;
+    background-color: #fff;
+    border-bottom: 1px #f4f4f4 solid;
+    border-top: 1px #f4f4f4 solid;
+    border-left: 1px #f4f4f4 solid;
+    height: 30px;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+.mjy_seach2 {
+    width: 77px;
+    float: left;
+    font-size: 0;
+}
+.mjy_seach2 input {
+    width: 75px;
+    background-color: #c5000f;
+    border-bottom: 1px #f4f4f4 solid;
+    border-top: 1px #f4f4f4 solid;
+    border-right: 1px #f4f4f4 solid;
+    height: 37px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+}
+.mjy_seach3 {
+    width: 250px;
+    float: left;
+    padding-top: 7px;
+    padding-left: 15px;
+    font-size: 14px;
+    color: #393939;
+}
+.hotHelp {
+    text-align: left;
+    font-size: 0;
+    border-bottom: 1px #303030 solid;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.hotHelp_list {
+    width: 887px;
+    text-align: left;
+    height: 150px;
+}
+.hotHelp_list ul {
+    width: 887px;
+    text-align: left;
+    list-style: none;
+}
+.hotHelp_list li {
+    float: left;
+    width: 280px;
+    height: 18px;
+    padding: 6px 6px;
+    font-size: 14px;
+    text-align: left;
+    position: relative;
+}
+.hotHelp_list li a {
+    width: 268px;
+    height: 18px;
+    position: absolute;
+    top: 6px;
+    left: 18px;
+    color: #707070;
+    text-decoration: none;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+}
+/*多行文本框的开始*/
+.answer {
+    background-color: #f4f4f4;
+    padding: 20px 20px;
+    width: 847px;
+    text-align: center;
+}
+.answer textarea {
+    width: 812px;
+    height: 111px;
+    padding: 6px;
+    color: #646464;
+    border:1px solid white;
+    margin: 0px auto;
+    overflow: hidden;
+    resize: none;
+}
+.help_dyzq_margin {
+    margin-top: 20px;
+    position: relative;
+}
+.code_tit {
+    position: absolute;
+    bottom: -20px;
+    left: 190px;
+    color:red;
+    font-size: 12px;
+    display:none;
+}
+.help_dyzq_margin>input {
+    width: 133px;
+    height: 32px;
+    padding: 6px;
+    border-radius: 5px;
+    border:1px solid black;
+}
+.mjy_code {
+    display:inline-block;
+    width: 50px;
+    height: 22px;
+    position: relative;
+    top: 7px;
+    left: 10px;
+    border:1px solid black;
+}
+.mjy_code div {
+    width: 12.5px;
+    color:white;
+    text-align: center;
+    font-size: 12px;
+    height: 10px;
+    line-height: 10px;
+    position: absolute;
+}
+.mjy_code p {
+    width: 2px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: black;
+    position: absolute;
+}
+.mjy_subDiv {
+    display:inline-block;
+    position: relative;
+    top: 0;
+    left: 20px;
+}
+.mjy_sub {
+    width: 264px;
+    height: 36px;
+    cursor: pointer;
+    font-size: 14px;
+    background-color: red;
+    padding: 2px 0px 0px 0px;
+    text-align: center;
+    color: white;
+    border:0;
+    border-radius: 5px;
+}
+/*多行文本框的结束*/
+/*最新最热开始*/
+.newHot {
+    height: 39px;
+    margin-top: 20px;
+}
+.up_to_date, .hottest {
+    height: 39px;
+    float: left;
+    width: 137px;
+}
+
+.newHot a {
+    font-size: 18px;
+    text-align: center;
+    line-height: 39px;
+    display: block;
+    height: 39px;
+    width: 137px;
+    color: #707070;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+}
+.newHot a.newHotBg {
+    background-color: #db8acf;
+    color: white;
+}
+/*最新最热结束*/

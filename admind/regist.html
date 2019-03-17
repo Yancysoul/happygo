@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="form">
+        手机号：<input type="text" id="tel" name="tel"><br>
+        密码：<input type="text" id="userpwd" name="userpwd"><br>
+        <input type="submit" value="注册" id="sub">
+    </div>
+    <script src="../js/jquery-1.8.3.min.js"></script>
+    <script>
+        $("#sub").click(function () {
+            $.ajax({
+                url: "regist.php",
+                type: "POST",
+                data: "tel=" + $("#tel").val() + "&userpwd=" + $("#userpwd").val(),
+                success: function (msg) {
+                    if (msg == 1) {
+                        alert("注册成功,将跳转到登录页面");
+                        setTimeout(function () {
+                            location.href = "login.html";
+                        });
+                    } else {
+                        alert("手机号已存在,将跳转到登录页面");
+                        setTimeout(function () {
+                            location.href = "login.html";
+                        });
+                    }
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

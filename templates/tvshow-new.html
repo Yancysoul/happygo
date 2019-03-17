@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/tvshow.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/jquery.idcode.css">
+</head>
+
+<body>
+    
+    <div class="wr">
+        <div class="l_r_top">
+            <ul class="l_r_top_ul">
+                <li >
+                    <a href="tvshow.php">看直播</a>
+                    <i></i>
+                </li>
+                <li class="on">
+                    <a href="tvshow-new.php">今日推荐</a>
+                    <i></i>
+                </li>
+                <li>
+                    <a href="tvshow-old.php">昨日热销榜</a>
+                    <i></i>
+                </li>
+            </ul>
+        </div>
+         <!-- 商品展示 -->
+         <ul class="groUlOut">
+             <!-- 每行的第四个 都有一个类名 no_margin -->
+                {foreach $today as $key=>$val}
+                <li class="pro_list">
+                       
+                        <a href="goodsDetail.php?id={$val['id']}" class="pro" target="_blank">
+                            <img src="images/{$val['goodspic']}" alt="" class="lazy" >
+                        </a>
+                        <p class="box_glay">
+                            <a href="#" class="pro_text" target="_blank">
+                                <span>{$val['goodsname']}</span>
+                            </a>
+                        </p>
+                        <p class="p_num">{$val["goodsdesc"]}</p>
+                        <div class="now_price">
+                            <div class="price_l fl">
+                                <span class="bigfont">
+                                    <span class="f_14">￥</span>
+                                    <span>{$val["goodsnewsprice"]}</span>
+                                </span>
+                                <span>
+                                    <del>￥{$val["goodsoldprice"]}</del>
+                                </span>
+                            </div>
+                            <div class="zk">7.0折</div>
+                        </div>
+                    </li>
+                    {/foreach}
+               
+         </ul>
+            <!-- 商品展示结束 -->
+    </div>
+
+   
+        <script src="js/jquery-1.8.3.min.js"></script>
+     <script src="js/header.js"></script>
+    <script src="js/jquery.idcode.js"></script>
+    <script src="js/tvshow.js"></script>
+    <script src="js/iscookie.js"></script>
+   
+   
+</body>
+
+</html>

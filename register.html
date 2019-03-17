@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/jquery.idcode.css">
+    <style>
+        .send_msg {
+            text-align: center;
+            width: 121px;
+            height: 40px;
+            line-height: 40px;
+            border: 1px solid gray;
+            position: absolute;
+            top: 77px;
+            left: 183px;
+            cursor: pointer;
+            background: #C1C1C1;
+        }
+    </style>
+</head>
+
+<body>
+<div class="register_logo">
+    <a href="index.html">
+        <img class="lef" src="imgs/szy.logo.jpg" alt="">
+    </a>
+    <img class="rig" src="imgs/top_center.jpg" alt="">
+</div>
+<div class="register_content clearfix">
+    <div class="content_img">
+        <img src="imgs/05657833806768851.jpg" alt="">
+    </div>
+    <div class="iogin_interface">
+        <div class="iogin_interface1">
+            <span class="iogin_happygo">用户注册</span>
+            <span class="register_happygo">已有账号
+                    <a href="logon.html">在此登录</a>
+                </span>
+        </div>
+        <form action="register.php" method="GET" id="signupForm" class="cmxform">
+            <div class="iogin_input">
+                <input class="iogin_inp" type="text" name="userphone" id="userphone" placeholder="请输入手机号码">
+                <span class="szy_phone tip" id="szy_phone"></span>
+                <input class="login_inp2" type="text" name="usernote" id="usernote" placeholder="验证码">
+                <span class="szy_note tip">请输入发送给您手机上的验证码</span>
+                <div class="hq_box" onclick="sendCaptcha()">获取短信验证码</div>
+                <input class="iogin_inp3" id="userpwd" type="password" placeholder="请输入密码" name="userpwd">
+                <input class="iogin_inp3" id="userpwd2" type="password" placeholder="请再次输入密码" name="userpwd2">
+                <input class="login_inp2" type="text" id="Txtidcode" placeholder="验证码">
+                <span id="idcode"></span>
+                <span class="szy_verify">请输入右侧验证码</span>
+                <!-- <input type="button" name="lj_iogin" id="btns" class="lj_iogin" value="立即注册"> -->
+                <input type="submit" id="btns" class="lj_iogin" value="立即注册">
+                <!-- <div class="lj_iogin" id="btns" class="">立即注册</div> -->
+                <div class="szy_check">
+                    <input type="checkbox" id="agree" name="agree">注册即表示同意快乐购
+                    <a href="#">《用户服务协议》</a>条款
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="szy_bottom">
+    <p>Copyright&copy; 2006-2016 happigo.All Rights Reservea 免费服务热线:400-705-1111 | 固话也可拨打: 400-705-8800
+        E-Mail:service@happigo.com</p>
+    <p>湘ICP备17009657号 信息网络传播视听节目许可证:1810530</p>
+</div>
+<div class="szy_bottom_img">
+    <a href="#">
+        <img src="imgs/untitled.png" alt="">
+    </a>
+    <a href="#">
+        <img src="imgs/untitled2.png" alt="">
+    </a>
+</div>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/layer/layer.js"></script>
+<script src="js/jquery.idcode.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/messages_zh.js"></script>
+<script src="js/register1.js"></script>
+<script>
+    //获取短信验证码
+    function codeTime() {
+        var validCode = true;
+        var time = 120;
+        var code = $('.hq_box');
+        if (validCode) {
+            validCode = false;
+            code.addClass("send_msg");
+            var t = setInterval(function () {
+                time--;
+                code.text("重新获取" + time + "秒");
+                if (time == 0) {
+                    clearInterval(t);
+                    code.text("重新获取");
+                    validCode = true;
+                    code.removeClass("send_msg");
+                }
+            }, 1000)
+        }
+    }
+
+    //发送验证码
+    function sendCaptcha() {
+        var phone = $('input[name=userphone]').val();
+        console.log(phone);
+        $.get(
+            'duanxin.php',
+            {userphone: phone},
+            function (msg) {
+                if (msg == '发送成功') {
+                    codeTime();
+                } else {
+                    layer.tips('发送失败', '#yzmBtn', {
+                        tips: [3, '#FF7113']
+                    });
+                }
+            });
+    }
+
+    $.idcode.setCode();
+
+    $("#Txtidcode").blur(function () {
+        var IsBy = $.idcode.validateCode();
+        // console.log(IsBy);
+        alert(IsBy);
+        // return IsBy;
+        if(!IsBy){
+            layer.tips('验证码错误', '#Txtidcode', {
+                tips: [3, '#FF7113']
+            });
+        }
+    });
+</script>
+</body>
+
+</html>

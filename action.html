@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // console.log(location.search);
+        var search=decodeURI(location.search.substring(1));
+        // console.log(search);
+         // 本地存储数组
+        // localStorage.goods=[1,2,3];
+
+        // 本地存储的格式: json
+        //localStorage.goods={items:[{},{},{}]}
+
+        var goods=localStorage.getItem("goods");
+        var goodsItem={};
+        goodsItem.id=getValue(search,"id");
+        console.log(goodsItem.id);
+        goodsItem.goodsName=getValue(search,"goodsName");
+        console.log(goodsItem.goodsName);
+        goodsItem.goodsDesc=getValue(search,"goodsDesc");
+        goodsItem.goodsPic=getValue(search,"goodsPic");
+        console.log(goodsItem.goodsPic);
+        goodsItem.goodsNewPrice=getValue(search,"goodsNewPrice");
+        goodsItem.val=getValue(search,"val");
+        // goodsItem.goodspic=getValue(search,"goodspic");
+
+        var item=[];
+        if(!goods){
+            item.push(goodsItem);
+             //存储在本地
+             localStorage.setItem("goods",JSON.stringify({"items":item}));
+        }else{
+             //获取
+            // console.log(goods);
+            // console.log(JSON.parse(goods),JSON.parse(goods).items);
+            item=JSON.parse(goods).items;
+            item.push(goodsItem);
+            localStorage.setItem("goods",JSON.stringify({"items":item}));
+        }
+        // json和字符串的相互转换
+        //json对象转换为json字符串   JSON.stringify()
+        //json字符串转换为json对象  JSON.parse(str)  str必须是json格式的字符串
+        function getValue(sea,key){
+            var arr=sea.split("&");
+            // console.log(arr);
+            for(var i=0;i<arr.length;i++){
+                if(arr[i].split("=")[0]==key){
+                    return arr[i].split("=")[1];
+                }
+            }
+        }
+
+    </script>
+</body>
+</html>

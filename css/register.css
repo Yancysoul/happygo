@@ -1,0 +1,207 @@
+.clearfix:after{
+	content: ".";
+	display: block;
+	visibility: hidden;
+	height: 0;
+	clear:both;
+}
+.clearfix{
+	zoom:1;
+}
+.register_logo{
+    width: 1000px;
+    height: 68px;
+    margin: 20px auto;
+    /* border:1px solid red; */
+}
+.lef{
+    float:left;
+}
+.rig{
+    float:right;
+    margin:20px 0;
+}
+.register_content{
+    width: 980px;
+    margin:40px auto;
+    /* border:1px solid blue; */
+}
+.content_img{
+    margin:20px;
+    float: left;
+}
+.iogin_interface{
+    width: 367px;
+    height: 600px;
+    /* border:1px solid red; */
+    float: left;
+}
+.iogin_interface1{
+    width: 325px;
+    height: 30px;
+    line-height: 30px;
+    margin:0 20px;
+    /* border:1px solid blue; */
+}
+.iogin_happygo{
+    color:#c52042;
+    font-weight: bold;
+    font-size: 25px;
+}
+.register_happygo{
+    float: right;
+    color:gray;
+}
+.register_happygo a{
+    color:#c52042;
+}
+.register_happygo a:hover{
+    text-decoration: none;
+}
+.iogin_input{
+    width: 320px;
+    /* border:1px solid red; */
+    margin-left: 20px;
+    margin-top: 30px;
+    position: relative;
+}
+.iogin_inp{
+    width: 292px;
+    height: 40px;
+    border:none;
+    border:1px solid gray;
+    padding-left: 10px;
+    position: relative;
+}
+.error{
+    border-color: #e24a4a;
+    box-shadow: 0 0 4px 1px rgba(228, 36, 36, 0.6);
+    color: rgba(228, 36, 36, 0.6);
+}
+#userphone-error{
+    position: absolute;
+    left: 0;
+    top:50px;
+}
+.szy_phone{
+    position: absolute;
+    left: 1px;
+    top:42px;
+    /* display: none; */
+    color: gray;
+}
+.szy_note{
+    position: absolute;
+    left: 1px;
+    top:118px;
+    display: none;
+    color: gray;
+}
+
+.szy_pwd{
+    position: absolute;
+    left: 10px;
+    top:195px;
+}
+.szy_pwd2{
+    position: absolute;
+    left: 10px;
+    top:272px;
+}
+.szy_verify{
+    position: absolute;
+    left: 1px;
+    top: 339px;
+    color: gray;
+    display: none;
+}
+.iogin_inp3{
+    width: 292px;
+    height: 40px;
+    margin-top: 30px;
+    border:none;
+    border:1px solid gray;
+    padding-left: 10px;
+    position: relative;
+}
+#userpwd-error{
+    position: absolute;
+    left: 0;
+    top:197px;
+}
+#userpwd2-error{
+    position: absolute;
+    left: 0;
+    top:271px;
+}
+#agree-error{
+    position: absolute;
+    left: 0;
+    top:451px;
+}
+.login_inp2{
+    width: 172px;
+    height: 40px;
+    margin-top: 35px;
+    border:none;
+    border:1px solid gray;
+    padding-left: 10px;
+}
+#idcode{
+    width: 100px;
+    height: 30px;
+    margin-left: 25px;
+}
+.hq_box{
+    text-align: center;
+    width: 121px;
+    height: 40px;
+    line-height: 40px;
+    border:1px solid gray;
+    position: absolute;
+    top: 77px;
+    left:183px;
+    background: #009999;
+    cursor: pointer;
+}
+.lj_iogin{
+    text-align: center;
+    width: 317px;
+    height: 40px;
+    line-height: 38px;
+    background: #95193e;
+    color:white;
+    margin-top: 35px;
+    font-size: 15px;
+}
+.lj_iogin:hover{
+    background:#9c2b4d;
+}
+.szy_check{
+    margin: 10px -2px;
+}
+.szy_check input{
+    vertical-align: -2px;
+    margin:0 5px;
+}
+.szy_check a{
+    color:#95193e;
+}
+.szy_check a:hover{
+    text-decoration: none;
+}
+
+
+.szy_bottom{
+    width: 900px;
+    height: 60px;
+    margin:0 auto;
+    text-align: center;
+    line-height: 27px;
+    color:gray;
+}
+.szy_bottom_img{
+    width: 650px;
+    height: 50px;
+    margin:25px auto;
+}

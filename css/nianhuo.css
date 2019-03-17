@@ -1,0 +1,128 @@
+.bg{
+    background: #0b2547;
+    width: 100%;
+}
+.g_tab{
+    width: 100%;
+    z-index: 500;
+    height: 50px;
+    padding: 3px 0;
+    background-color: #000000;
+}
+.g_tab>div{
+    text-align: center;
+    width: 13.2%;
+    margin:  0 0.5%;
+    float: left;
+    position: relative;
+}
+.g_tab>div .yuan{
+    display: inline-block;
+    vertical-align: 4px;
+}
+.g_tab>div.current a{
+    color: #e13423;
+    text-decoration: underline;
+}
+.g_tab>div a{
+    font-size: 25px;
+    line-height: 50px;
+    color: #9c7e76;
+}
+.g_tab>div .none{
+    display: none;
+}
+.pos{
+    position: relative;
+}
+.pos .top_img{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+.container{
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+    position: relative;
+}
+.container .yhq{
+    position: relative;
+    margin-top: -100px;
+}
+.container .quan{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+a img{
+    border:0 none;
+
+}
+img{
+    vertical-align: top;
+}
+.main1_img1{
+    display: block;
+    width: 100%;
+    margin: 50px auto;
+}
+.main_1{
+    position: relative;
+    background: #fae2bc;
+    padding: 0 0 50px 0;
+}
+.main_cd,.main_ms{
+    margin-top: 50px;
+    position: relative;
+}
+.main_img{
+    padding-top: 30px;
+    width:100% ;
+    display: block;
+    margin: 0 auto;
+}
+.m-g{
+    position: absolute;
+    top: 34%;
+    left: 1%;
+    width: 100%;
+    padding: 20px;
+}
+.g-n{
+    width: 30.8%;
+    display: inline-block;
+}
+.main-xsq{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 37%;
+}
+.nav-tab{
+    position: relative;
+    z-index: 2;
+    padding: 0 30px;
+    text-align: center;
+}
+.nav-item{
+    float: left;
+    border: 1px solid #000;
+    height: 50px;
+    margin: 0 1%;
+    width: 31%;
+    background-color: #b7292a;
+    border-radius: 8px;
+}
+.nav-item a{
+    color: white;
+    font-size: 25px;
+    line-height: 50px;
+    font-weight: bold;
+}
+.active{
+    background: #ff9740;
+}
+.nav-item.active a{
+    color: #000;
+}

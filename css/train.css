@@ -1,0 +1,146 @@
+.v2_ad {
+    overflow: hidden;
+    margin-top: 10px;
+    height: 348px;
+}
+.v2_ad_left {
+    width: 890px;
+    margin: 0 20px 0 0;
+    position: relative;
+    height: 348px;
+    overflow: hidden;
+}
+.v2_ad_cont {
+    font-size:0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.v2_ad_cont img {
+  height: 348px;
+}
+.v2_ad_right {
+    width: 290px;
+    position: relative;
+    height: 348px;
+    background: #333;
+}
+.v2_ad_nav a {
+    display: block;
+    font-size: 0;
+    opacity: 0.8;
+}
+.v2_ad_right img {
+    height: 114px;
+    margin: 1px 0;
+    border:0 none;
+    width: 100%;
+}
+.headline {
+    text-align: left;
+    border-bottom: 1px #303030 solid;
+    height: 30px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.commonType {
+    font-size: 14px;
+    border-bottom: 1px #ebebeb dashed;
+    height: 35px;
+    padding-top: 10px;
+    font-weight: bold;
+    text-align: left;
+}
+.commonType a {
+    color: rgb(57, 57, 57);
+}
+.present {
+    display:none;
+    font-size: 14px;
+    padding: 20px;
+    text-align: left;
+    background-color: #f4f4f4;
+}
+.present div {
+    display: none;
+}
+.tabPanel {
+    margin: 30px 0 0 0;
+}
+.courTab {
+    height: 39px;
+}
+.courTab li {
+    float: left;
+    list-style: none;
+    border: 0px;
+    height: 19px;
+    width: 100px;
+    text-align: center;
+    cursor: pointer;
+    color: #303030;
+    font-size: 14px;
+    padding-top: 14px;
+    padding-bottom: 5px;
+}
+.courTab li.hit {
+    height: 27px;
+    width: 96px;
+    color: #ffffff;
+    font-size: 16px;
+    padding-top: 12px;
+    padding-bottom: 0px;
+    padding-right: 4px;
+    background-image: url(../imgs/courBg.jpg);
+}
+.panes {
+    width: 1220px;
+}
+.v2_course {
+    height: 261px;
+    overflow: hidden;
+    width: 588px;
+    margin: 0 20px 20px 0;
+    float: left;
+    border: 1px solid #eee;
+}
+.v2_course_left {
+    width: 269px;
+    float: left;
+    padding: 10px;
+}
+.v2_course_left img {
+    width: 100%;
+}
+.v2_course_right {
+    width: 269px;
+    float: left;
+    clear: right;
+    padding: 10px;
+}
+.v2_course h2 {
+    line-height: 20px;
+    padding: 20px 0 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #303030;
+}
+.v2_course_bar {
+    color: #999;
+}
+.v2_course p {
+    color: #333;
+    margin: 10px 0 0 0;
+    font-size: 14px;
+    height: 36px;
+    overflow: hidden;
+}
+.v2_course h4 {
+    padding: 5px 0 0 0;
+    color: #000;
+    font-weight: bold;
+}
+.v2_course_right ul li a {
+    color: #707070;
+}

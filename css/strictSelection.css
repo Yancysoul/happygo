@@ -1,0 +1,239 @@
+.location {
+    height: 57px;
+    line-height: 57px;
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+.location a ,.location span {
+    font-size: 14px;
+    color:#666666;
+}
+.location span {
+    padding: 0 8px;
+}
+.sl_box {
+    margin-top: 18px;
+}
+.sl_head {
+    background-color: #fbfbfb;
+    border: 1px solid #e4e4e4;
+    height: 40px;
+    line-height: 40px;
+}
+.slh_label {
+    color: #94193f;
+    float: left;
+    padding-right: 0px;
+    text-align: center;
+    width: 86px;
+    border-right: 1px solid #e4e4e4;
+    margin-right: 10px;
+    background-color: #fff;
+}
+.sl_sort {
+    float: left;
+    padding-left: 20px;
+}
+.sl_sort li {
+    float: left;
+    text-align: center;
+    padding-right: 30px;
+}
+.sl_sort li a {
+    color: #999;
+}
+@font-face {
+  font-family: 'iconfont';
+  src: url('../fonts/strictSelect/iconfont.eot');
+  src: url('../fonts/strictSelect/iconfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/strictSelect/iconfont.woff') format('woff'),
+  url('../fonts/strictSelect/iconfont.ttf') format('truetype'),
+  url('../fonts/strictSelect/iconfont.svg#iconfont') format('svg');
+}
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:12px;font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+.tv_goods {
+    overflow: hidden;
+}
+.tv_goods input{
+    vertical-align: middle;
+}
+.r_txt {
+    padding-left: 4px;
+    padding-top: 0px;
+    display: inline-block;
+    vertical-align: middle;
+    color: #94193f;
+}
+.head_pagebtn {
+    float: right;
+    padding-right: 10px;
+}
+.head_pageInfo {
+    color: #999999;
+    float: left;
+    padding-right: 38px;
+}
+.head_pagecont {
+    float: left;
+    padding-right: 10px;
+}
+.head_pagecount span {
+    color: #c41f3a;
+    padding: 0 2px;
+}
+.head_pagecount .s_line {
+    color: #999;
+    padding: 0 5px;
+}
+.sp_red {
+    color: #c41f3a;
+}
+.head_pagebtn ul li {
+    float: left;
+    color: #999;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.head_pagebtn ul li a {
+    color: #999;
+}
+.sl_list {
+    margin-top: 20px;
+}
+.sl_list ul li {
+    border: 1px solid #e4e4e4;
+    float: left;
+    margin: 5px 9px 18px 0px;
+    padding: 0 0 15px;
+    width: 291px;
+    height: 360px;
+    position: relative;
+    cursor: pointer;
+}
+.goods-pic img {
+    width: 100%;
+}
+.sl_goods_info {
+    padding: 0 15px;
+}
+.sl_price {
+    margin-top: 5px;
+    overflow: hidden;
+}
+.sl_price1 {
+    color: #94193f;
+    font-family: "华文细黑";
+    font-size: 18px;
+}
+.sl_price1 span {
+    font-family: arial;
+    font-size: 20px;
+    font-weight: bold;
+}
+.sl_price2 {
+    color: #969696;
+    padding-left: 10px;
+}
+.present a{
+    font-family: 宋体;
+    line-height: 1.4em;
+    overflow: hidden;
+    display: block;
+    color: #434343;
+}
+.sl_list ul li.noborder {
+    margin-right: 0;
+}
+.page_list {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 20px;
+    text-align: center;
+}
+#kkpager{
+    clear:both;
+    height:30px;
+    line-height:30px;
+    margin-top:20px;
+    color:#999999;
+    font-size:14px;
+    display: block;
+}
+#kkpager a{
+    padding:4px 8px;
+    margin:10px 3px;
+    font-size:12px;
+    border:1px solid #DFDFDF;
+    background-color:#FFF;
+    color:#9d9d9d;
+    text-decoration:none;
+}
+#kkpager span{
+    font-size:14px;
+}
+#kkpager span.disabled{
+    padding:4px 8px;
+    margin:10px 3px;
+    font-size:12px;
+    border:1px solid #DFDFDF;
+    background-color:#FFF;
+    color:#DFDFDF;
+}
+#kkpager span.curr{
+    padding:4px 8px;
+    margin:10px 3px;
+    font-size:12px;
+    border:1px solid #FF6600;
+    background-color:#FF6600;
+    color:#FFF;
+}
+#kkpager a:hover{
+    background-color:#FFEEE5;
+    border:1px solid #FF6600;
+}
+#kkpager span.normalsize{
+    font-size:12px;
+}
+#kkpager_gopage_wrap{
+    display:inline-block;
+    width:44px;
+    height:18px;
+    border:1px solid #DFDFDF;
+    margin:0px 1px;
+    padding:0px;
+    position:relative;
+    left:0px;
+    top:5px;
+}
+#kkpager_btn_go {
+    width:44px;
+    height:20px;
+    line-height:20px;
+    padding:0px;
+    font-family:arial,宋体,sans-serif;
+    text-align:center;
+    border:0px;
+    background-color:#0063DC;
+    color:#FFF;
+    position:absolute;
+    left:0px;
+    top:-1px;
+    display:none;
+}
+#kkpager_btn_go_input{
+    width:42px;
+    height:16px;
+    text-align:center;
+    border:0px;
+    position:absolute;
+    left:0px;
+    top:0px;
+    outline:none;
+}

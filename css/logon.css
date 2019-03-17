@@ -1,0 +1,283 @@
+.clearfix:after{
+	content: ".";
+	display: block;
+	visibility: hidden;
+	height: 0;
+	clear:both;
+}
+.clearfix{
+	zoom:1;
+}
+.register_logo{
+    width: 1000px;
+    height: 68px;
+    margin: 20px auto;
+    /* border:1px solid red; */
+}
+.lef{
+    float:left;
+}
+.rig{
+    float:right;
+    margin:20px 0;
+}
+.register_content{
+    width: 980px;
+    margin:20px auto;
+    /* border:1px solid blue; */
+}
+.content_img{
+    margin:20px;
+    float: left;
+}
+.iogin_interface{
+    width: 367px;
+    height: 600px;
+    /* border:1px solid red; */
+    float: left;
+}
+.iogin_interface1{
+    width: 325px;
+    height: 50px;
+    line-height: 50px;
+    margin:0 20px;
+    margin-top: 12px;
+    /* border:1px solid blue; */
+}
+.iogin_happygo{
+    color:#c52042;
+    font-weight: bold;
+    font-size: 25px;
+}
+.register_happygo{
+    float: right;
+    color:gray;
+}
+.register_happygo a{
+    color:#c52042;
+}
+.register_happygo a:hover{
+    text-decoration: none;
+}
+.radio_box{
+    margin: 10px 20px;
+    margin-top: 20px;
+}
+.radio_box label input{
+    vertical-align: -3px;
+}
+.szy_le{
+    margin-left: 8px;
+}
+.margin{
+    margin-left: 40px;
+}
+.iogin_input{
+    width: 320px;
+    /* border:1px solid red; */
+    margin-left: 20px;
+    position: relative;
+}
+.iogin_input2{
+    width: 320px;
+    /* border:1px solid red; */
+    margin-left: 20px;
+    position: relative;
+    display: none;
+}
+.iogin_inp{
+    width: 292px;
+    height: 38px;
+    padding-left: 10px;
+}
+.szy_phone,.szy_phone2{
+    position: absolute;
+    top: 43px;
+    left: 2px;
+    color:gray;
+}
+.password_ipt{
+    position: absolute;
+    top: 120px;
+    left: 2px;
+    color:gray;
+}
+.szy_error{
+    background:url("../imgs/login_icon_list.png") 0px 5px no-repeat;
+    display: block;
+    position: absolute;
+    top:39px;
+    left: 0;
+    width: 16px;
+    height: 20px;
+}
+.szy_error2{
+    position: absolute;
+    top:43px;
+    left: 17px;
+    color:red;
+}
+.szy_hidden{
+    display: none;
+}
+.userphone_ipt {
+    color: #8c8c8c;
+    position: absolute;
+    top: 43px;
+    left: 2px;
+}
+.userphone_ipt_err {
+    color: #c4203b;
+    position: absolute;
+    top: 43px;
+    left: 2px;
+}
+.usernote_ipt {
+    color: #8c8c8c;
+    position: absolute;
+    top: 120px;
+    left: 2px;
+}
+.usernote_ipt_err {
+    color: #c4203b;
+    position: absolute;
+    top: 120px;
+    left: 2px;
+}
+.szy_pwd{
+    /* display: none; */
+    position: absolute;
+    left:11px;
+    top: 89px
+}
+.login_inp2{
+    width: 157px;
+    height: 38px;
+    margin-top: 35px;
+    padding-left: 10px;
+}
+.szy_note{
+    position: absolute;
+    top: 120px;
+    left: 2px;
+    color:gray;
+    display: none;
+}
+.szy_note2{
+    position: absolute;
+    top: 195px;
+    left: 2px;
+}
+#userpwd{
+    width: 292px;
+    height: 38px;
+    padding-left: 10px;
+    margin-top: 35px;
+}
+.hq_box{
+    text-align: center;
+    width: 121px;
+    height: 40px;
+    line-height: 40px;
+    border:1px solid gray;
+    position: absolute;
+    top: 77px;
+    left:183px;
+    cursor: pointer;
+}
+#idcode{
+    margin-left: 30px;
+}
+.ch_box{
+    margin-top: 35px;
+}
+.ch_box input{
+    vertical-align: -2px;
+}
+.ch_box a{
+    float: right;
+    margin-right: 20px;
+    color:gray;
+}
+.ch_box a:hover{
+    text-decoration: none;
+}
+.lj_iogin,.lj_iogin2{
+    text-align: center;
+    width: 317px;
+    height: 38px;
+    line-height: 38px;
+    background: #95193e;
+    color:white;
+    margin-top: 35px;
+    font-size: 15px;
+}
+.lj_iogin2{
+    margin-top:10px;
+}
+.lj_iogin:hover{
+    background:#9c2b4d;
+}
+.log_in{
+    width: 220px;
+    height: 100px;
+    /* border:1px solid red; */
+    margin:15px 20px;
+}
+.log_in img{
+    margin-top: 10px;
+}
+.szy_bottom{
+    width: 900px;
+    height: 60px;
+    margin:0 auto;
+    text-align: center;
+    line-height: 27px;
+    color:gray;
+}
+.szy_bottom_img{
+    width: 650px;
+    height: 50px;
+    margin:0 auto;
+    margin-top: 30px;
+}
+/* .register_content{
+    position: relative;
+} */
+.szy_posit{
+    width: 216px;
+    height: 270px;
+    /* border:1px solid red; */
+    position: absolute;
+    top: 261px;
+    right: 250px;
+}
+.szy_imgover{
+    margin-top: 51px;
+}
+.szy_imgover,szy_imgover2{
+    float:left;
+}
+.alert {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100;
+    background-color: rgba(0, 0, 0, .5);
+}
+.alertmsg {
+    width: 275px;
+    height: 81px;
+    background-color: #fff;
+    border-radius: 5px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-left: -137px;
+    margin-top: -40px;
+    line-height: 81px;
+    text-align: center;
+    font-size: 14px;
+}

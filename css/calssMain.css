@@ -1,0 +1,84 @@
+.classMain {
+    margin-top: 30px;
+}
+.classMain .title {
+    font-size: 22px;
+    color: #222;
+    line-height: 32px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+.classMain .title i {
+    width: 3px;
+    height: 20px;
+    background: rgba(34,34,34,1);
+    margin-right: 8px;
+    display: inline-block;
+}
+.classMain .list ul li {
+    float: left;
+    width: 262px;
+    height: 380px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    margin-right: 42px;
+    border: 3px solid transparent;
+}
+.classMain .list ul li:nth-child(4n) {
+    margin-right: 0;
+}
+.classMain .list ul li:hover {
+    border: 3px solid red;
+}
+.classMain .list ul li:hover p {
+    text-decoration: underline;
+}
+.classMain .list ul li a {
+    display: block;
+}
+.classMain .list ul li .img {
+    width: 262px;
+    height: 262px;
+}
+.classMain .list ul li .img img {
+    width: 100%;
+    height: 100%;
+}
+.classMain .list ul li .p_title {
+    height: 1.2em;
+    line-height: 1.2em;
+    color: #666;
+    font-size: 14px;
+    margin-top: 9px;
+    padding: 0 10px;
+}
+.classMain .list ul li .p_info {
+    height: 1.2em;
+    line-height: 1.2em;
+    color: #666;
+    font-size: 14px;
+    margin-top: 4px;
+    height: 40px;
+    line-height: 20px;
+    font-size: 14px;
+    color: #333;
+    padding: 0 10px;
+}
+.classMain .list ul li .p_price {
+    margin-top: 3px;
+    padding: 0 10px;
+}
+.classMain .list ul li .p_price span {
+    font-weight: bold;
+    color: #df0010;
+    font-size: 14px;
+    margin-left: -3px;
+}
+.classMain .list ul li .p_price span span {
+    font-size: 22px;
+}
+.classMain .list ul li .p_price del {
+    color: #969696;
+    font-size: 14px;
+    margin-left: 10px;
+}

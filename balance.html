@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>快乐购商城</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="./css/mycart.css">
+    <link rel="stylesheet" href="./css/balance.css">
+    <link rel="stylesheet" href="./css/footer.css">
+</head>
+
+<body>
+    <!-- 头部开始 -->
+    <div class="header">
+        <div class="header_top">
+            <div class=" wr clearfix">
+                <div class="header_top_left fl">
+                    <span>欢迎来到欢乐购</span>
+                    <a href="logon.html" class="a_login">[登录]</a>
+                    <a href="register.html" class="a_reg">[注册]</a>
+                    <div class="reg_tips">
+                        <div class="reg_tips_arr"></div>
+                        <p>注册即得新人专享288元购物红包 </p>
+                        <div class="close_r_tips" onclick="$(this).parent().css({'display':'none'})">
+                            x
+                        </div>
+                    </div>
+                </div>
+                <div class="header_top_right fr">
+                    <ul>
+                        <li>
+                            <a href="csmIndex.html">合作招商</a>
+                            <span class="line">|</span>
+                        </li>
+                        <li>
+                            <a href="logon.html">订单查询</a>
+                            <span class="line">|</span>
+                        </li>
+                        <li>
+                            <a href="#">我的快乐购</a>
+                            <span class="line">|</span>
+                        </li>
+                        <li>
+                            <span class="tel_icon"></span>
+                            400-705-1111
+                            <span class="line">|</span>
+                        </li>
+                        <li class="down_load_hpg">
+                            <a href="#">下载快乐购app</a>
+                            <span class="line">|</span>
+                            <div class="down_load_border">
+                                <b class="icon_top"></b>
+                                <img src="imgs/ewm.png" alt="">
+                                <p class="icon_word">快乐生活 快乐购</p>
+                            </div>
+                        </li>
+                        <li class="cus_box">
+                            <a href="#">客服中心
+                                <b class="arrow_down"></b>
+                            </a>
+
+                            <div class="cus_center">
+                                <a href="#">帮助中心</a>
+                                <a href="#">会员反馈</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 头部结束 -->
+    <!-- 订单流程 -->
+    <div class="full_sc order_status">
+        <div class="wr header_center clearfix">
+            <div class="h_c_logo">
+                <a href="javascript:void(0);">
+                    <img src="./imgs/logo.jpg" alt="">
+                </a>
+            </div>
+            <div class="h_c_right">
+                <div class="csj_first circle"></div>
+                <div class="csj_second lines"></div>
+                <div class="csj_third circle"></div>
+                <div class="csj_fourth lines"></div>
+                <div class="csj_fivth circle"></div>
+                <div class="word mychart">我的购物车</div>
+                <div class="word banlance">确认订单信息</div>
+                <div class="word success">成功提交订单</div>
+            </div>
+        </div>
+    </div>
+    <!-- 订单流程end -->
+    <!-- 订单信息 -->
+    <form action="" id="order_form" name="order_form">
+        <div class="wr clearfix">
+            <div class="h2">确认订单信息</div>
+            <div class="o_o_content">
+                <!-- 地址选择 -->
+                <div class="o_o_part o_o_part1">
+                    <h2 class="part_h2">
+                        选择收货地址
+                        <span class="addr_errtips" id="addr_error"></span>
+                        <div class="btn_new_addr">
+                            <b>+</b>新增收货地址</div>
+                    </h2>
+                    <div class="new_addr" id="new_addr">
+                        <div class="ncc-form-default">
+                            <form action="" id="addr_form">
+                                <input type="hidden" value="buy" name="act">
+                                <input type="hidden" value="add_addr" name="op">
+                                <input type="hidden" name="form_submit" value="ok">
+                                <dl>
+                                    <dt>
+                                        <i class="required">*</i>收货人姓名：</dt>
+                                    <dd>
+                                        <input type="text" class="text w100" name="true_name" maxlength="12" id="true_name" value="">
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>
+                                        <i class="required">*</i>
+                                        所在地区：
+                                    </dt>
+                                    <dd>
+                                        <div id="region">
+                                            <select name="statename" id="statename">
+                                                <!-- <option value="0">请选择省份</option> -->
+                                            </select>
+                                            <select name="city" id="city">
+                                                <!-- <option>请选择城市</option> -->
+                                            </select>
+                                            <select name="county" id="county">
+                                                <!-- <option>请选择区县</option> -->
+                                            </select>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>
+                                        <i class="required">*</i>详细地址：</dt>
+                                    <dd>
+                                        <input type="text" class="text w500" name="address" id="address" maxlength="80" value="">
+                                        <p class="hint">请填写真实地址，不需要重复填写所在地区</p>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>
+                                        <i class="required">*</i>手机号码：</dt>
+                                    <dd>
+                                        <input type="text" class="text w200" name="mob_phone" id="mob_phone" maxlength="15" value=""> &nbsp;&nbsp;(或)&nbsp;固定电话：
+                                        <input type="text" class="text w200" id="tel_phone" name="tel_phone" maxlength="20" value="">
+                                    </dd>
+                                </dl>
+                                <div class="addr_item btn_item">
+                                    <a href="javascript:void(0);" class="btn_addaddr">确定</a>
+                                    <a href="javascript:void(0);" class="btn_addaddr">返回</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="addr_list" id="addr_list" style="display: none;">
+                        <ul>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 地址选择end -->
+                <!-- 在线支付 -->
+                <div class="o_o_part o_o_part2">
+                    <h2 class="part_h2">2&nbsp;支付方式</h2>
+                    <div class="pay_type">
+                        <ul>
+                            <li class="on" payment_code="online">在线支付
+                                <b></b>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 在线支付end -->
+                <!-- 商品清单 -->
+                <div class="o_o_part o_o_part3">
+                    <h2 class="part_h2">3&nbsp;商品清单
+                        <a href="javascript:void(0)" class="a_price_ch">
+                            <img src="./imgs/1111.png">价格说明
+                            <div class="price_ch_pop" style="display: block;">
+                                <span class="price_ch_close">X</span>
+                                <div>
+                                    因可能存在系统缓存、页面更新导致价格变动异常等不确定性情况出现，商品售价以本结算页商品价格为准；如有疑问，请您立即联系销售商咨询。
+                                </div>
+                            </div>
+                        </a>
+                        <a class="a_return_car" href="javascript:void(0)"> &lt; 返回购物车</a>
+                    </h2>
+                    <div class="order_shop clearfix"></div>
+                </div>
+                <!-- 商品清单end -->
+                <!-- 结算 -->
+                <div class="yhxx_box">
+                    <ul class="yhxx_list">
+                        <li>
+                            <div class="yhxx_tit">商品总额:
+                                <span class="yhxx_money">￥
+                                    <span id="goods_money">10311</span>
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="yhxx_tit">快乐币 :
+                                <span class="yhxx_money">
+                                    <span class="s_jian">-</span>￥
+                                    <span id="order_gift">0</span>
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="yhxx_tit">优惠券:
+                                <span class="yhxx_money">
+                                    <span class="s_jian">-</span>￥
+                                    <span id="order_voucher">0</span>
+                                </span>
+                            </div>
+
+                        </li>
+                        <li>
+                            <div class="yhxx_tit">满减优惠:
+                                <span class="yhxx_money">
+                                    <span class="s_jian">-</span>￥
+                                    <span id="order_manjian">0</span>
+                                </span>
+                            </div>
+
+                        </li>
+                        <li>
+                            <div class="yhxx_tit">运费:
+                                <span class="yhxx_money">
+                                    <span class="s_jian">+</span>￥
+                                    <span id="order_freight">0</span>
+                                </span>
+                            </div>
+
+                        </li>
+                    </ul>
+
+
+                </div>
+                <!-- 结算end -->
+                <!-- 总计 -->
+                <div class="btnsure_bg" style="display: block;">
+                    <div class="sureorder clearfix">
+                        <div class="jine">应付总额：
+                            <span class="fwxh_30">￥</span>
+                            <span class="span_m " id="s_order_money">10311</span>
+                        </div>
+                        <p id="addressinfo">送至：&nbsp;&nbsp;&nbsp;&nbsp;收货人：&nbsp;&nbsp;</p>
+                        <div>
+                            <a href="index.php?act=cart&amp;op=index" class="a_returncar">&lt;返回购物车</a>
+                            <a class="un_btn_sure" id="btn_sure" href="javascript:void(0);">提交订单</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 总计end -->
+            </div>
+        </div>
+    </form>
+    <!-- 订单信息end -->
+
+    <!-- 尾部开始 -->
+    <div class="footer">
+        <div class="footer_top">
+            <div class="wr">
+                <img src="imgs/foot_img1.jpg" alt="">
+            </div>
+        </div>
+        <div class="footer_con">
+            <div class="wr clearfix">
+                <div class="footer_con_left fl">
+                    <dl>
+                        <dt>使用帮助</dt>
+                        <dd>
+                            <a href="">税费收取规则</a>
+                        </dd>
+                        <dd>
+                            <a href="">新手指南</a>
+                        </dd>
+                        <dd>
+                            <a href="">用户协议</a>
+                        </dd>
+                        <dd>
+                            <a href="">常见问题</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>会员服务</dt>
+                        <dd>
+                            <a href="">快乐币政策</a>
+                        </dd>
+                        <dd>
+                            <a href="">会员等级</a>
+                        </dd>
+                        <dd>
+                            <a href="">会员权益</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>支付方式</dt>
+                        <dd>
+                            <a href="">快乐币支付</a>
+                        </dd>
+                        <dd>
+                            <a href="">在线支付</a>
+                        </dd>
+                        <dd>
+                            <a href="">货到付款</a>
+                        </dd>
+                        <dd>
+                            <a href="">优惠券支付</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>配送方式</dt>
+                        <dd>
+                            <a href="">配送说明</a>
+                        </dd>
+                        <dd>
+                            <a href="">包邮政策</a>
+                        </dd>
+                        <dd>
+                            <a href="">费用说明</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>售后服务</dt>
+                        <dd>
+                            <a href="">电子发票</a>
+                        </dd>
+                        <dd>
+                            <a href="">退货政策</a>
+                        </dd>
+                        <dd>
+                            <a href="">售后咨询</a>
+                        </dd>
+                        <dd>
+                            <a href="">退货办理</a>
+                        </dd>
+
+                    </dl>
+                </div>
+                <div class="footer_con_right fr">
+                    <ul>
+                        <li>
+                            <h2>手机快乐购</h2>
+                            <img src="imgs/footer_ewm_01.png" alt="">
+                            <p>下载移动客户端</p>
+                        </li>
+                        <li>
+                            <h2>快乐购微信</h2>
+                            <img src="imgs/footer_ewm_02.png" alt="">
+                            <p>快乐购官方微信</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer_nav">
+            <ul class="footer_nav_ul clearfix">
+                <li>
+                    <a href="">关于芒果超媒</a>
+                    <span class="line"></span>
+                </li>
+                <li>
+                    <a href="">投资者关系</a>
+                    <span class="line"></span>
+                </li>
+                <li>
+                    <a href="">自营品牌招商</a>
+                    <span class="line"></span>
+                </li>
+                <li>
+                    <a href="">联系我们</a>
+                    <span class="line"></span>
+                </li>
+                <li>
+                    <a href="">营业证照</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer_copy">
+            <div class="wr">
+                <p class="copyright_des1">Copyright© 2006-2018 happigo. All Rights Reserved 免费服务热线: 400-705-1111 | 固话也可拨打: 400-705-8800
+                </p>
+                <p>湘ICP备17009657号 信息网络传播视听节目许可证号：1810530
+                    <img src="imgs/jh.png" alt="">湘公网安备 43010502000556号</p>
+                <p>
+                    <a href="#">
+                        <img src="imgs/footer_img4.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="imgs/brand_bottom_small.jpg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="imgs/footer_shuidi.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="imgs/hy_124x47.png" alt="" style="height:40px">
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- 尾部结束 -->
+    <script src="./js/jquery-1.8.3.min.js"></script>
+    <script src="./js/area.js"></script>
+    <script src="./js/balance.js"></script>
+</body>
+
+</html>

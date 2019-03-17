@@ -1,0 +1,323 @@
+.h2 {
+    font-size: 18px;
+    color: #333333;
+    height: 60px;
+    line-height: 60px;
+    padding-top: 20px;
+    width: 100%;
+    overflow: hidden;
+}
+.o_o_content {
+    padding-bottom: 20px;
+}
+.part_h2 {
+    padding: 25px 0 10px 0px;
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+    height: 25px;
+    line-height: 25px;
+    border-bottom: 1px solid #d2d2d2;
+    position: relative;
+}
+.addr_errtips {
+    color: #e4393c;
+    padding-left: 35px;
+}
+.btn_new_addr {
+    float: right;
+    font-family: "宋体";
+    font-size: 14px;
+    cursor: pointer;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    color: #4966a0;
+}
+.btn_new_addr b {
+    font-size: 18px;
+    padding-right: 5px;
+    vertical-align: middle;
+}
+.new_addr {
+    margin-top: 20px;
+}
+.ncc-form-default dl {
+    font-size: 0;
+    line-height: 20px;
+    clear: both;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+.ncc-form-default dl dt {
+    font-size: 12px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-align: right;
+    display: inline-block;
+    width: 90px;
+    padding: 10px 1% 10px 20px;
+    margin: 0;
+}
+.ncc-form-default dl dt i.required {
+    font: 12px/16px Tahoma;
+    color: #9c3752;
+    vertical-align: middle;
+    margin-right: 4px;
+}
+.ncc-form-default dl dd {
+    font-size: 12px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    display: inline-block;
+    width: 84%;
+    padding: 10px 0 10px 0;
+}
+input[type="text"], input[type="password"], input.text, input.password {
+    font: 12px/20px Tahoma;
+    color: #777;
+    background-color: #FFF;
+    vertical-align: middle;
+    display: inline-block;
+    height: 19px;
+    padding: 2px 4px;
+    border: solid 1px #CCC;
+    outline: 0 none;
+}
+.w100 {
+    width: 100px !important;
+}
+.ncc-form-default dl dd select {
+    margin-right: 5px;
+}
+select {
+    color: #777;
+    background-color: #FFF;
+    vertical-align: top;
+    display: inline-block;
+    height: 23px;
+    /* padding: 4px; */
+    border: solid 1px #CCC;
+}
+select option {
+    line-height: 20px;
+    height: 20px;
+}
+option {
+    font-weight: normal;
+    display: block;
+    white-space: pre;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+}
+.w500 {
+    width: 500px;
+}
+.ncc-form-default dl dd p {
+    clear: both;
+    color: #777;
+}
+
+.w200 {
+    width: 200px !important;
+}
+.btn_item {
+    height: 28px;
+    line-height: 28px;
+    padding-left: 238px;
+    padding-top: 10px;
+}
+
+.addr_item {
+    padding-left: 238px;
+    height: 20px;
+    line-height: 20px;
+}
+.btn_addaddr, .btn_addaddr:link, .btn_addaddr:visited {
+    display: block;
+    width: 136px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    background-color: #94193f;
+    color: #fff;
+    font-size: 16px;
+    float: left;
+    margin-right: 15px;
+}
+.pay_type {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 20px;
+}
+.pay_type ul {
+    padding-left: 0px;
+}
+.pay_type ul .on, .ask_bill ul .on {
+    border: 2px solid #c41f3a;
+    color: #c41f3a;
+    padding: 0;
+}
+
+.pay_type ul li, .ask_bill ul li {
+    font-size: 13px;
+    cursor: pointer;
+    float: left;
+    position: relative;
+    padding: 1px;
+    width: 92px;
+    height: 30px;
+    border: 1px solid #c8c8c8;
+    color: #333333;
+    margin-right: 10px;
+    text-align: center;
+    line-height: 30px;
+}
+.a_price_ch {
+    font-weight: normal;
+    position: absolute;
+    top: 25px;
+    right: 100px;
+    font-size: 14px;
+    color: #4966a0;
+    display: block;
+    height: 35px;
+    line-height: 35px;
+  }
+  .a_price_ch>img {
+    margin-right: 5px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .price_ch_pop {
+    display: none;
+    box-shadow: 0 0 10px #fffded inset;
+    -moz-box-shadow: 0px 0px 10px #fffded;
+    position: absolute;
+    left: 0;
+    top: 35px;
+    width: 213px;
+    background: #fffded;
+    border: 1px solid #f8ac08;
+    z-index: 2;
+  }
+  .price_ch_close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0px 8px 10px 10px;
+    z-index: 5;
+    color: #f8ac08;
+  }
+  .price_ch_pop>div {
+    padding: 10px 20px 10px 10px;
+    color: #666666;
+    line-height: 17px;
+  }
+  .a_return_car {
+    position: absolute;
+    top: 29px;
+    right: 0;
+    font-size: 14px;
+    color: #4966a0;
+    font-weight: normal;
+  }
+  .order_shop{
+      width: 1200px;
+      height: 594px;
+      border: 1px solid #888;
+  }
+  .yhxx_list {
+    padding: 20px 0;
+  }
+  .yhxx_list li {
+    width: 100%;
+    overflow: hidden;
+    height: 25px;
+    line-height: 25px;
+    text-align: right;
+  }
+  .yhxx_tit {
+    padding-right: 35px;
+    font-size: 13px;
+    color: #666666;
+  }
+  .yhxx_money {
+    font-size: 14px;
+    color: #333;
+    padding-left: 10px;
+    display: inline-block;
+    vertical-align: bottom;
+    width: 95px;
+  }
+  .yhxx_money span {
+    font-size: 14px;
+  }
+  .btnsure_bg {
+    overflow: hidden;
+    padding: 15px 0 15px;
+    width: 100%;
+    background: #f3f3f3;
+    border-top: 1px solid #e5e5e5;
+  }
+  .sureorder {
+    padding-right: 32px;
+    text-align: right;
+  }
+  .jine {
+    height: 38px;
+    line-height: 38px;
+    padding-right: 15px;
+    font-family: "宋体";
+  }
+  .fwxh_30 {
+    color: #DF0010;
+  }
+  .fwxh_30 {
+    font-family: "华文细黑";
+    font-size: 30px;
+    /* color: #94193f; */
+  }
+  #s_order_money {
+    color: #DF0010;
+  }
+  .span_m {
+    font-family: Arial;
+    font-size: 30px;
+    font-weight: bold;
+    /* color: #94193f; */
+  }
+  .sureorder p {
+    font-size: 13px;
+    color: #999;
+    line-height: 45px;
+  }
+  .un_btn_sure {
+    border-radius: 5px;
+    background-color: #888;
+    color: #fff;
+    display: inline-block;
+    font-size: 20px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    width: 124px;
+  }
+  .a_returncar {
+    color: #4966a0;
+    font-size: 14px;
+    padding-right: 15px;
+  }
+  .csj_second{
+      background-color: #94193f;
+  }
+  .csj_third{
+      width: 11px;
+      height: 11px;
+      border: 0;
+      background-color: #94193f;
+      left: 162px;
+  }

@@ -1,0 +1,64 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+form {
+    width: 600px;
+    margin: 0 auto;
+}
+form div {
+    min-height: 50px;
+}
+form label {
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+}
+form div input[type=text] {
+    width: 300px;
+    height: 30px;
+}
+.sort, .goodsactive {
+    vertical-align: top;
+    display: inline-block;
+    width: 400px;
+}
+.sort input, .goodsactive input {
+    margin: 0 10px;
+}
+.btn {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+.btn input, .btn a {
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    margin: 0 20px;
+    outline: none;
+    border: 1px solid #888;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn a {
+    background-color: #eee;
+    text-decoration: none;
+    font-size: 14px;
+    color: #000;
+    line-height: 30px;
+}
+.btn input:hover, .btn a:hover {
+    color: #fff;
+    background-color: rgb(91, 115, 170);
+}
+.promptMsg {
+    width: 100%;
+    text-align: center;
+    color: red;
+    font-size: 18px;
+}
+span {
+    color: red;
+}

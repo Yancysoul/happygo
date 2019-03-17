@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/csmregist.css">
+    <link rel="stylesheet" href="css/jquery.idcode.css">
+</head>
+<body>
+    <div class="backdrop">
+        <div class="main">
+            <div class="main_title">
+                <h4>快乐购商务平台注册</h4>
+                <p>这些信息会让我们更了解你</p>
+            </div>
+            <div class="step">
+                <div class="line">
+                    <div></div>
+                </div>
+                <div class="icon icon_cur"><i class="iconfont">&#xe604;</i><p>注册用户</p></div>
+                <div class="icon icon_center"><i class="iconfont">&#xe62b;</i><p>申请须知</p></div>
+                <div class="icon"><i class="iconfont">&#xe673;</i><p>填写申请</p></div>
+            </div>
+            <div class="landing">
+                <div class="cur_landing_focus" id="user_have">我没有快乐购网站的账户，全新登陆</div>
+                <div id="user_no">我已有快乐购网站的账户，关联注册</div>
+            </div>
+            <div class="form">
+                <div class="form_have">
+                    <div>
+                        <label for="username"><span>用户名</span>：</label><div><input type="text" id="username" name="username" class="userinfo" placeholder="用户名">
+                        <div class="ipt"></div></div>
+                    </div>
+                    <div>
+                        <label for="userpwd"><span>登陆密码</span>：</label><div><input type="text" id="userpwd" name="userpwd" class="userinfo" placeholder="登陆密码"><div class="ipt"></div></div>
+                    </div>
+                    <div class="user_dis">
+                        <label for="userpwds"><span>重复密码</span>：</label><div><input type="text" id="userpwds" name="userpwds" class="userinfo" placeholder="重复密码"><div class="ipt"></div></div>
+                    </div>
+                    <div class="user_dis">
+                        <label for="email"><span>电子邮件</span>：</label><div><input type="text" id="email" name="email" class="userinfo" placeholder="电子邮件"><div class="ipt"></div></div>
+                    </div>
+                    <div>
+                        <label for="phone"><span>手机号码</span>：</label><div><input type="text" id="phone" name="phone" class="userinfo" placeholder="手机号码"><div class="ipt"></div></div>
+                    </div>
+                    <div class="var_code">
+                        <label for="Txtidcode"><span>验证码</span>：</label><div><input type="text" id="Txtidcode" name="Txtidcode" class="Txtidcode" placeholder="验证码"><span id="idcode"></span><div class="ipt"></div></div>
+                    </div>
+                    <div class="theaty">
+                        <label for="theaty"></label><input type="checkbox" id="theaty" name="theaty">我已阅读并同意<a href="javascript:void(0)">《快乐购网站用户服务协议》</a>和<a href="javascript:void(0)">《快乐购HBP商务平台使用协议》</a>
+                    </div>
+                </div>
+            </div>
+            <div class="next">
+                <span id="next">下一步</span>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.idcode.js"></script>
+    <script src="js/csmregist.js"></script>
+</body>
+</html>

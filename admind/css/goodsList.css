@@ -1,0 +1,7 @@
+table caption a {
+    margin-left: 20px;
+}
+table caption a.add {
+    float: right;
+    margin-right: 50px;
+}

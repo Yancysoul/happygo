@@ -1,0 +1,25 @@
+.wr {
+    /* max-width: 1200px;
+    min-width: 1000px; */
+    width: 1200px;
+    margin: 0 auto;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.clearfix {
+    zoom: 1;
+}
+ul, li {
+    list-style: none;
+}
